@@ -53,12 +53,26 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           GestureDetector(
             onTap: () {
-              Get.toNamed(RouteConfig.jverifyPage);
+              // Get.toNamed(RouteConfig.jverifyPage);
             },
             child: ListTile(
               title: Card(
                 child: Container(
                   child: Text("进入极光"),
+                  height: 50,
+                  alignment: Alignment.centerLeft,
+                ),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Get.toNamed(RouteConfig.mainPage);
+            },
+            child: ListTile(
+              title: Card(
+                child: Container(
+                  child: Text("进入mainPage"),
                   height: 50,
                   alignment: Alignment.centerLeft,
                 ),

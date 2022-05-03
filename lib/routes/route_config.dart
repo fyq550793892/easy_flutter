@@ -1,4 +1,8 @@
-import 'package:easy_flutter/jverify_modules/jverify/jverify_view.dart';
+import 'package:easy_flutter/get_use/middle_use/login_middle.dart';
+import 'package:easy_flutter/login_pages/login_page.dart';
+import 'package:easy_flutter/login_pages/num_code_page.dart';
+import 'package:easy_flutter/main_page_modules/main/main_view.dart';
+import 'package:easy_flutter/main_page_modules/main_second/main_second_view.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
 import '../main.dart';
@@ -10,10 +14,13 @@ import '../main.dart';
  */
 class RouteConfig {
   static const String appHomePage = "/"; //
-  static const String jverifyPage = "/jverifyPage";
+  // static const String jverifyPage = "/jverifyPage";
   // static const String tabViewPage = "/tabViewPage"; // 主页
-  // static const String loginPage = "/loginPage"; // 登录
-  // static const String inputCodePage = "/inputCodePage"; // 输入验证码
+  static const String loginPage = "/loginPage"; // 登录
+  static const String mainPage = "/mainPage";
+  static const String mainSecondPage = "/mainSecondPage";
+  static const String inputCodePage = "/inputCodePage"; // 输入验证码
+
   // static const String studyFlagPage = "/studyFlagPage"; // 兴趣爱好
   // static const String serviceAgreementPage = "/serviceAgreementPage";
   // static const String privacyAgreementPage = "/privacyAgreementPage";
@@ -36,9 +43,14 @@ class RouteConfig {
         page: () => MyHomePage(
               title: '首页',
             )),
-    GetPage(name: jverifyPage, page: () => JverifyPage()),
-    // GetPage(name: loginPage, page: () => LoginPage()),
-    // GetPage(name: inputCodePage, page: () => InputCodePage()),
+    GetPage(
+      name: mainPage,
+      page: () => MainPage(),
+    ),
+    GetPage(name: loginPage, page: () => LoginPage()),
+    GetPage(name: inputCodePage, page: () => NumCodePage()),
+    GetPage(name: mainSecondPage, page: () => MainSecondPage(), middlewares: [LoginMiddle()]),
+
     // GetPage(name: studyFlagPage, page: () => StudyFlagPage()),
     // GetPage(name: serviceAgreementPage, page: () => ServiceAgreementPage()),
     // GetPage(name: privacyAgreementPage, page: () => PrivacyAgreementPage()),
