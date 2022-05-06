@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 
 // 验证码
 class NumCodePage extends StatelessWidget {
-  const NumCodePage({Key? key}) : super(key: key);
+  const NumCodePage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

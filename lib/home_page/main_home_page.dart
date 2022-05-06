@@ -8,7 +8,7 @@ import 'package:get/get.dart';
  * @date: 2022/5/6
  */
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key key, @required this.title}) : super(key: key);
 
   final String title;
 
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           GestureDetector(
             onTap: () {
-              Get.toNamed(RouteConfig.permissionPage);
+              Get.toNamed(RouteConfig.locationPage);
             },
             child: ListTile(
               title: Card(

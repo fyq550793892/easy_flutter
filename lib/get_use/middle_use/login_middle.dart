@@ -5,7 +5,7 @@ import 'package:sp_util/sp_util.dart';
 
 class LoginMiddle extends GetMiddleware {
   @override
-  RouteSettings? redirect(String? route) {
+  RouteSettings redirect(String route) {
     bool login = SpUtil.getBool("login") ?? false;
     if (login) {
       return null;

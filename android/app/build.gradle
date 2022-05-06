@@ -41,6 +41,24 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
+    signingConfigs {
+        release {
+            storeFile file('./release.jks')
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        debug {
+            storeFile file('./release.jks')
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
+        }
+    }
+
+
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.example.easy_flutter"

@@ -8,7 +8,7 @@ import 'package:permission_handler/permission_handler.dart';
  * @date: 2022/5/6
  */
 class PermissionPage extends StatelessWidget {
-  const PermissionPage({Key? key}) : super(key: key);
+  const PermissionPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

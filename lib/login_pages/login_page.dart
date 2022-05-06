@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:sp_util/sp_util.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

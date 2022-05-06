@@ -34,8 +34,8 @@ import 'package:flutter/material.dart';
 
 /// 封装 按钮
 class CustomButton extends StatelessWidget {
-  final VoidCallback? onPressed;
-  final String? title;
+  final VoidCallback onPressed;
+  final String title;
 
   const CustomButton({@required this.onPressed, this.title});
 
