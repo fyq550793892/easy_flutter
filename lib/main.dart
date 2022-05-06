@@ -1,5 +1,6 @@
 import 'package:easy_flutter/routes/route_config.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -20,72 +21,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      builder: EasyLoading.init(),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: ListView(
-        children: [
-          GestureDetector(
-            onTap: () {
-              // Get.toNamed(RouteConfig.jverifyPage);
-            },
-            child: ListTile(
-              title: Card(
-                child: Container(
-                  child: Text("进入极光"),
-                  height: 50,
-                  alignment: Alignment.centerLeft,
-                ),
-              ),
-            ),
-          ),
-          GestureDetector(
-            onTap: () {
-              Get.toNamed(RouteConfig.mainPage);
-            },
-            child: ListTile(
-              title: Card(
-                child: Container(
-                  child: Text("进入mainPage"),
-                  height: 50,
-                  alignment: Alignment.centerLeft,
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

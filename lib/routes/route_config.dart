@@ -1,11 +1,12 @@
 import 'package:easy_flutter/get_use/middle_use/login_middle.dart';
+import 'package:easy_flutter/home_page/main_home_page.dart';
+import 'package:easy_flutter/location_modules/location_page.dart';
 import 'package:easy_flutter/login_pages/login_page.dart';
 import 'package:easy_flutter/login_pages/num_code_page.dart';
 import 'package:easy_flutter/main_page_modules/main/main_view.dart';
 import 'package:easy_flutter/main_page_modules/main_second/main_second_view.dart';
+import 'package:easy_flutter/permission_modules/permission_page.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
-
-import '../main.dart';
 
 /**
  * @Author: fanyuqing
@@ -20,6 +21,8 @@ class RouteConfig {
   static const String mainPage = "/mainPage";
   static const String mainSecondPage = "/mainSecondPage";
   static const String inputCodePage = "/inputCodePage"; // 输入验证码
+  static const String permissionPage = "/permissionPage"; // 权限页
+  static const String locationPage = "/locationPage";
 
   // static const String studyFlagPage = "/studyFlagPage"; // 兴趣爱好
   // static const String serviceAgreementPage = "/serviceAgreementPage";
@@ -50,6 +53,9 @@ class RouteConfig {
     GetPage(name: loginPage, page: () => LoginPage()),
     GetPage(name: inputCodePage, page: () => NumCodePage()),
     GetPage(name: mainSecondPage, page: () => MainSecondPage(), middlewares: [LoginMiddle()]),
+
+    GetPage(name: permissionPage, page: () => PermissionPage()),
+    GetPage(name: locationPage, page: () => LocationPage()),
 
     // GetPage(name: studyFlagPage, page: () => StudyFlagPage()),
     // GetPage(name: serviceAgreementPage, page: () => ServiceAgreementPage()),

@@ -26,11 +26,21 @@ dependencies:
 
   cupertino_icons: ^1.0.2
 
+  # 极光
 #  jverify: 2.2.4
 
   get: ^4.6.1
 
   sp_util: ^2.0.3
+
+  # 权限相关
+  permission_handler: ^8.3.0
+
+  # toast
+  fluttertoast: ^8.0.9
+
+  # loading
+  flutter_easyloading: ^3.0.3
 
 dev_dependencies:
   flutter_test:
