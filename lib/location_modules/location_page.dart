@@ -185,16 +185,17 @@ class _LocationPageState extends State<LocationPage> {
     }
 
     return new MaterialApp(
-        home: new Scaffold(
-      appBar: new AppBar(
-        title: new Text('AMap Location plugin example app'),
+      home: new Scaffold(
+        appBar: new AppBar(
+          title: new Text('AMap Location plugin example app'),
+        ),
+        body: new Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: widgets,
+        ),
       ),
-      body: new Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: widgets,
-      ),
-    ));
+    );
   }
 
   ///获取iOS native的accuracyAuthorization类型

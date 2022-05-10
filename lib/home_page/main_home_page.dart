@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   child: Text("进入极光"),
                   height: 50,
-                  alignment: Alignment.centerLeft,
+                  alignment: Alignment.center,
                 ),
               ),
             ),
@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   child: Text("进入mainPage"),
                   height: 50,
-                  alignment: Alignment.centerLeft,
+                  alignment: Alignment.center,
                 ),
               ),
             ),
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   child: Text("进入权限页"),
                   height: 50,
-                  alignment: Alignment.centerLeft,
+                  alignment: Alignment.center,
                 ),
               ),
             ),
@@ -84,7 +84,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   child: Text("进入高德定位页"),
                   height: 50,
-                  alignment: Alignment.centerLeft,
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Get.toNamed(RouteConfig.customViewPage);
+            },
+            child: ListTile(
+              title: Card(
+                child: Container(
+                  child: Text("进入自定义图形页"),
+                  height: 50,
+                  alignment: Alignment.center,
                 ),
               ),
             ),
