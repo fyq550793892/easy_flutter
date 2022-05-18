@@ -1,4 +1,5 @@
 import 'package:easy_flutter/routes/route_config.dart';
+import 'package:easy_flutter/widgets/dialog_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -97,6 +98,44 @@ class _MyHomePageState extends State<MyHomePage> {
               title: Card(
                 child: Container(
                   child: Text("进入自定义图形页"),
+                  height: 50,
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Get.toNamed(RouteConfig.customWidgetPage);
+            },
+            child: ListTile(
+              title: Card(
+                child: Container(
+                  child: Text("进入自定义widgets"),
+                  height: 50,
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              String title = "123";
+              showDialog(
+                context: context,
+                builder: (context) {
+                  /*
+                  1/ dialog写法,先套center,再设Column中的mainAxisSize: MainAxisSize.min属性
+                  2--- 更新dialog状态的几种方法 2.1: 直接抽取StatefulWidget 2.2: 套StatefulBuilder 2.3: 直接调用源码 markNeedsBuild
+                   */
+                  return DialogWidget();
+                },
+              );
+            },
+            child: ListTile(
+              title: Card(
+                child: Container(
+                  child: Text("显示dialog"),
                   height: 50,
                   alignment: Alignment.center,
                 ),
