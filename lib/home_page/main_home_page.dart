@@ -111,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: ListTile(
               title: Card(
                 child: Container(
-                  child: Text("进入自定义widgets"),
+                  child: Text("进入自定义FitBox_widgets"),
                   height: 50,
                   alignment: Alignment.center,
                 ),
@@ -136,6 +136,20 @@ class _MyHomePageState extends State<MyHomePage> {
               title: Card(
                 child: Container(
                   child: Text("显示dialog"),
+                  height: 50,
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Get.toNamed(RouteConfig.pageViewPage);
+            },
+            child: ListTile(
+              title: Card(
+                child: Container(
+                  child: Text("进入PageView练习widgets"),
                   height: 50,
                   alignment: Alignment.center,
                 ),

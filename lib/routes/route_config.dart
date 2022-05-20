@@ -8,6 +8,7 @@ import 'package:easy_flutter/login_pages/num_code_page.dart';
 import 'package:easy_flutter/main_page_modules/main/main_view.dart';
 import 'package:easy_flutter/main_page_modules/main_second/main_second_view.dart';
 import 'package:easy_flutter/permission_modules/permission_page.dart';
+import 'package:easy_flutter/widget_study_modules/widget_study_page.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
 /**
@@ -27,6 +28,7 @@ class RouteConfig {
   static const String locationPage = "/locationPage"; // 定位页
   static const String customViewPage = "/customViewPage"; // 自定义绘制页
   static const String customWidgetPage = "/customWidgetPage"; // 自定义绘制页
+  static const String pageViewPage = "/pageViewPage"; // pageView练习页
 
   // static const String studyFlagPage = "/studyFlagPage"; // 兴趣爱好
   // static const String serviceAgreementPage = "/serviceAgreementPage";
@@ -63,6 +65,7 @@ class RouteConfig {
     GetPage(name: locationPage, page: () => LocationPage()),
     GetPage(name: customViewPage, page: () => CustomViewPage()),
     GetPage(name: customWidgetPage, page: () => CustomWidgetPage()),
+    GetPage(name: pageViewPage, page: () => WidgetStudyPage()),
 
     // GetPage(name: studyFlagPage, page: () => StudyFlagPage()),
     // GetPage(name: serviceAgreementPage, page: () => ServiceAgreementPage()),

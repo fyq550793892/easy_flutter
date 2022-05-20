@@ -42,6 +42,9 @@ dependencies:
   # loading
   flutter_easyloading: ^3.0.3
 
+  # 好用的多功能库
+  flukit: ^2.0.0
+
   # 高德
   amap_location_flutter_plugin:
     git:
