@@ -50,6 +50,12 @@ dependencies:
     git:
       url: https://github.com/amap-demo/amap-location-flutter.git
 
+  # 屏幕适配
+  flutter_screenutil: ^5.5.3+2
+
+#  # 系统信息
+#  system_info2: ^2.0.4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

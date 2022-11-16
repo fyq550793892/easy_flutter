@@ -156,6 +156,48 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
           ),
+          GestureDetector(
+            onTap: () {
+              Get.toNamed(RouteConfig.infoPage);
+            },
+            child: ListTile(
+              title: Card(
+                child: Container(
+                  child: Text("进入手机信息页面"),
+                  height: 50,
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Get.toNamed(RouteConfig.dialogShowPage);
+            },
+            child: ListTile(
+              title: Card(
+                child: Container(
+                  child: Text("进入自定义dialog页面"),
+                  height: 50,
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Get.toNamed(RouteConfig.autoScrollPage);
+            },
+            child: ListTile(
+              title: Card(
+                child: Container(
+                  child: Text("进入自动滚动到某一个item页面"),
+                  height: 50,
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
