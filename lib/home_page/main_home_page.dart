@@ -198,6 +198,20 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
           ),
+          GestureDetector(
+            onTap: () {
+              Get.toNamed(RouteConfig.longPicSavePage);
+            },
+            child: ListTile(
+              title: Card(
+                child: Container(
+                  child: Text("进入保存长图页"),
+                  height: 50,
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(

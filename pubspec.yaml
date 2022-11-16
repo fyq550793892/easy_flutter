@@ -53,6 +53,9 @@ dependencies:
   # 屏幕适配
   flutter_screenutil: ^5.5.3+2
 
+  # 图片保存
+  image_gallery_saver: ^1.7.1
+
 #  # 系统信息
 #  system_info2: ^2.0.4
 
