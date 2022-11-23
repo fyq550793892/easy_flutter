@@ -1,6 +1,7 @@
 import 'package:easy_flutter/custom_view_modules/custom_view_page.dart';
 import 'package:easy_flutter/custom_widget_modules/custom_widget_page.dart';
 import 'package:easy_flutter/get_use/middle_use/login_middle.dart';
+import 'package:easy_flutter/global/state_bar/state_bar_use_widget.dart';
 import 'package:easy_flutter/home_page/main_home_page.dart';
 import 'package:easy_flutter/location_modules/location_page.dart';
 import 'package:easy_flutter/login_pages/login_page.dart';
@@ -29,6 +30,7 @@ class RouteConfig {
   static const String customViewPage = "/customViewPage"; // 自定义绘制页
   static const String customWidgetPage = "/customWidgetPage"; // 自定义绘制页
   static const String pageViewPage = "/pageViewPage"; // pageView练习页
+  static const String globalBarPage = "/globalBarPage"; // 状态栏页面
 
   // static const String studyFlagPage = "/studyFlagPage"; // 兴趣爱好
   // static const String serviceAgreementPage = "/serviceAgreementPage";
@@ -66,6 +68,7 @@ class RouteConfig {
     GetPage(name: customViewPage, page: () => CustomViewPage()),
     GetPage(name: customWidgetPage, page: () => CustomWidgetPage()),
     GetPage(name: pageViewPage, page: () => WidgetStudyPage()),
+    GetPage(name: globalBarPage, page: () => StateBarUserWidget()),
 
     // GetPage(name: studyFlagPage, page: () => StudyFlagPage()),
     // GetPage(name: serviceAgreementPage, page: () => ServiceAgreementPage()),

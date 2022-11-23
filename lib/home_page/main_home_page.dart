@@ -156,6 +156,20 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
           ),
+          GestureDetector(
+            onTap: () {
+              Get.toNamed(RouteConfig.globalBarPage);
+            },
+            child: ListTile(
+              title: Card(
+                child: Container(
+                  child: Text("进入状态栏练习页"),
+                  height: 50,
+                  alignment: Alignment.center,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
